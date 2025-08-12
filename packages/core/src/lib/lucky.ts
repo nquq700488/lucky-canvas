@@ -107,7 +107,7 @@ export default class Lucky {
    * 根标签的字体大小
    */
   protected setHTMLFontSize (): void {
-    if (!window) return
+  if (!window || !window.getComputedStyle) return
     this.htmlFontSize = +window.getComputedStyle(document.documentElement).fontSize.slice(0, -2)
   }
 

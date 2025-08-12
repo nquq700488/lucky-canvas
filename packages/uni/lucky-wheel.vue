@@ -129,6 +129,7 @@
         return getImage.call(this, 'lucky-wheel', myCanvas)
       },
       hideCanvas () {
+        if (this.imgSrc) return
         // #ifdef MP
         this.getImage().then(res => {
           this.imgSrc = res.tempFilePath

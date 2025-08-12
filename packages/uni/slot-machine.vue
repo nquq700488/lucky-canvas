@@ -113,6 +113,7 @@
         return getImage.call(this, 'slot-machine', myCanvas)
       },
       hideCanvas () {
+        if (this.imgSrc) return
         // #ifdef MP
         this.getImage().then(res => {
           this.imgSrc = res.tempFilePath
