@@ -2,7 +2,7 @@ import React from 'react'
 import Taro from '@tarojs/taro'
 import { View, Canvas, Image } from '@tarojs/components'
 import { SlotMachine as Slot } from 'lucky-canvas'
-import { changeUnits, resolveImage, getFlag, getImage } from '../utils'
+import { changeUnits, resolveImage, getFlag, getImage } from '../utils/index.js'
 import '../utils/index.css'
 
 export default class SlotMachine extends React.Component {

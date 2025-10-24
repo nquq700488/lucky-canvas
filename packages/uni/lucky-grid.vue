@@ -193,6 +193,7 @@
         return getImage.call(this, 'lucky-grid', myCanvas)
       },
       hideCanvas () {
+        if (this.imgSrc) return
         // #ifdef MP
         this.getImage().then(res => {
           this.imgSrc = res.tempFilePath
